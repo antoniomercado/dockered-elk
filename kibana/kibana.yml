@@ -1,0 +1,26 @@
+port: 443
+host: "0.0.0.0"
+elasticsearch_url: "http://elasticsearch:9200"
+elasticsearch_preserve_host: true
+kibana_index: ".kibana"
+default_app_id: "discover"
+request_timeout: 300000
+shard_timeout: 0
+verify_ssl: true
+kibana_elasticsearch_username: admin
+kibana_elasticsearch_password: changeme
+ssl_key_file: /opt/kibana/server.key
+ssl_cert_file: /opt/kibana/server.crt
+
+# Plugins that are included in the build, and no longer found in the plugins/ folder
+bundled_plugin_ids:
+ - plugins/dashboard/index
+ - plugins/discover/index
+ - plugins/doc/index
+ - plugins/kibana/index
+ - plugins/markdown_vis/index
+ - plugins/metric_vis/index
+ - plugins/settings/index
+ - plugins/table_vis/index
+ - plugins/vis_types/index
+ - plugins/visualize/index

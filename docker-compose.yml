@@ -1,0 +1,30 @@
+version: '2'
+services:
+    kibana:
+        build: "./kibana"
+        restart: always
+        hostname: kibana
+        ports:
+           - "443:443"
+        links:
+           - "elasticsearch:elasticsearch"
+        volumes:
+           - "/etc/ssl/private:/etc/ssl/private"
+    elasticsearch:
+        build: "./elasticsearch"
+        restart: always
+        hostname: elasticsearch
+        ports:
+           - "9200"
+           - "9300"
+        volumes:
+           - "/mnt/elasticsearch:/data"
+    logstash:
+        build: "./logstash"
+        restart: always
+        hostname: logstash
+        ports:
+           - "8443:8443"
+           - "8444:8444"
+        links:
+           - "elasticsearch:elasticsearch"

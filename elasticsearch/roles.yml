@@ -1,0 +1,18 @@
+# All cluster rights
+# All operations on all indices
+admin: 
+cluster: all
+    indices:
+        '*': all
+
+# monitoring cluster privileges
+# All operations on all indices
+power_user: 
+    cluster: monitor
+    indices:
+        '*': all
+
+# Read-only operations on indices
+user: 
+    indices:
+        '*': read

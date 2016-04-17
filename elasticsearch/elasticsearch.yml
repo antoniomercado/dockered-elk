@@ -1,0 +1,11 @@
+http.cors.allow-origin: "/.*/"
+http.cors.enabled: true
+cluster.name: elasticsearch
+node.name: "localhost"
+threadpool.search.queue_size: 20000
+network.bind_host: 0.0.0.0
+path:
+    data: /data/index
+    logs: /data/log
+    plugins: /data/plugins
+    work: /data/work
