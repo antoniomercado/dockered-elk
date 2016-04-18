@@ -46,6 +46,9 @@ uses it to write the log data to the Elasticsearch database. You will want to ch
 Each service in the stack has its own Dockerfile which defines the versions via Dockerfile `ENV` variables. This is
 where you would go to change the version of different services as the Elastic community relases new versions of the software.
 
+### Tip 3
+To change the Logstash filters you need to edit `logstash/logstash.conf`. The stack defaults to foltering nginx access
+and error logs.
 
 # Contributions
 
