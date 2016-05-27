@@ -16,8 +16,6 @@ RUN wget "https://download.elastic.co/kibana/kibana/kibana_"$KIBANA_VERSION"_amd
 # Configs
 ADD kibana.yml /opt/kibana/config/kibana.yml
 ADD entrypoint.sh /opt/kibana/entrypoint.sh
-ADD server.key /opt/kibana/server.key
-ADD server.crt /opt/kibana/server.crt
 
 EXPOSE 443
 
