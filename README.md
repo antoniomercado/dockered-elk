@@ -7,7 +7,7 @@ ELK is a widely accepted solution for system and application logging and infrast
 have system logs on every node in your network, its another to be able to see real-time data about their state. The Filebeat plugin support 
 bundled with this stack defaults with TLS encryption and self signed certificates for "localhost"
 support. The Kibana endpoint can be accessed by visiting `https://localhost` if you are deploying this locally. Logs can
-be shipped using Log courier to "localhost:8444".
+be shipped using the Filebeat plugin to "localhost:8444".
 
 # Versions
 
