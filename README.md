@@ -52,5 +52,4 @@ and error logs.
 
 # Contributions
 
-All contributions are gladly welcomed. Leave a message or open a pull request and lets make this project as badass as it
-can be.
+All contributions are gladly welcomed. Leave a message or open a pull request.
