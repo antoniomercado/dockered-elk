@@ -3,7 +3,7 @@
 This project provides the foundation to deploy an Elasticsearch, Logstash, and Kibana (otherwise known as ELK) stack
 with Filebeat plugin support via docker compose. 
 
-ELK is a widely accepted solution for system and application logging and infrastructure introspection. It's one thing to
+ELK is a widely accepted solution for system and application logging and infrastructure visibility. It's one thing to
 have system logs on every node in your network, its another to be able to see real-time data about their state. The Filebeat plugin support 
 bundled with this stack defaults with TLS encryption and self signed certificates for "localhost"
 support. The Kibana endpoint can be accessed by visiting `https://localhost` if you are deploying this locally. Logs can
